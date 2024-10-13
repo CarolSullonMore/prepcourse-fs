@@ -13,4 +13,8 @@ function sonIguales(x, y) {
   }
 }
 
+//function sonIguales(x, y) {
+//  return x === y; // Retorna directamente el resultado de la comparación
+//}
+
 module.exports = sonIguales;

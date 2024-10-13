@@ -6,6 +6,15 @@ function menosQueNoventa(num) {
   // 50 ---> true
   // 91 ---> false
   // Tu código:
+  if (num < 90) {
+    return true;
+  } else {
+    return false;
+  }
 }
+
+//function menosQueNoventa(num) {
+//  return num < 90; // Retorna directamente el resultado de la comparación
+//}
 
 module.exports = menosQueNoventa;

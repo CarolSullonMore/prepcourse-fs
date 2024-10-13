@@ -6,12 +6,12 @@ function esPositivo(num) {
   // Si el número es negativo ---> "Es negativo".
   // Si el número es 0, devuelve false.
   // Tu código:
-  if (num => 1) {
+  if (num > 0) {
     return 'Es positivo';
-  if (num < 1)
+  } else if (num < 0) {
     return 'Es negativo';
   } else {
-    return 'Es negativo';
+    return false;
   }
 }
 
