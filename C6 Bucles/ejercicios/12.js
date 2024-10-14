@@ -4,6 +4,11 @@ function fizzBuzz(num) {
   // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
   // De lo contrario, retorna false.
   // Tu código:
+  if (num ) {
+
+  } else {
+    
+  }
 }
 
 module.exports = fizzBuzz;
