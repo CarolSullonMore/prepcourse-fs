@@ -6,6 +6,27 @@ function obtenerDiaSemana(numero) {
   // Si el número no corresponde a un día de la semana, retorna
   // el string "No es un dia de la semana"
   // Tu código:
+  switch (numero) {
+    case 1:
+      return 'Lunes';
+    case 2:
+      return 'Martes';
+    case 3:
+      return 'Miercoles';
+    case 4:
+      return 'Jueves';
+    case 5:
+      return 'Viernes';
+    case 6:
+      return 'Sabado';
+    case 7:
+      return 'Domingo';
+  default:
+  return 'No es un dia de la semana';
+  }
 }
+
+// Aqui use switch por primera vez.
+// El switch evalúa una variable (en este caso, numero) y, dependiendo de su valor, ejecuta un bloque de código asociado con ese valor. Si el valor no coincide con ninguno de los casos, se ejecuta el bloque default.
 
 module.exports = obtenerDiaSemana;

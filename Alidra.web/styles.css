@@ -1,4 +1,4 @@
-body{
+/* body{
     background-color: black;
 }
 
@@ -52,4 +52,123 @@ body{
 
 #calendarDays:hover{
     background-color: rgb(250, 250, 250);
+}
+*/
+
+/* Estilo del fondo con degradado */
+body.fondo {
+    background: linear-gradient(to bottom, black, #2e004f);
+    font-family: 'Arial', sans-serif;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Tipografía personalizada para los títulos */
+.title {
+    font-family: 'More Sugar', cursive;
+    font-size: 4rem;
+    text-align: center;
+    color: #ffccf9;
+    margin: 20px 0;
+}
+
+.subtitle {
+    font-family: 'More Sugar', cursive;
+    font-size: 2.5rem;
+    color: #ffe4f7;
+    text-align: center;
+}
+
+/* Estilo para los enlaces del menú de navegación */
+.nav a {
+    color: #f5c6ff;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #ff99ff;
+}
+
+.nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ff99ff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* Estilo para la sección de introducción */
+.introduction {
+    text-align: center;
+    margin: 50px 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo para el panel de texto al estilo visual novel */
+.decorated-box {
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #ffccf9;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    font-family: 'More Sugar', cursive;
+    color: #f9f9f9;
+    text-align: center;
+}
+
+.panel-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+/* Efecto en botones o enlaces interactivos */
+button, .nav a {
+    transition: all 0.3s ease;
+}
+
+button:hover, .nav a:hover {
+    box-shadow: 0 0 10px #ff99ff, 0 0 20px #ff99ff;
+}
+
+button:hover::after, .nav a:hover::after {
+    content: '✨';
+    font-size: 1.2rem;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    animation: sparkle 0.8s linear infinite;
+}
+
+@keyframes sparkle {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.5); opacity: 0; }
+}
+
+/* Footer estilo simple y elegante */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a001a;
+    color: #ffccf9;
 }
