@@ -3,32 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alidra VTuber</title>
+    <title>Alidra VTuber!</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=More+Sugar&display=swap" rel="stylesheet">
 </head>
 <body class="fondo">
     <header>
         <h1 class="title">Welcome to Alidra.com</h1>
-        <nav class="nav">
-            <a href="#">Home</a>
-            <a href="#">Socials</a>
-            <a href="#">Portafolio</a>
-            <a href="#">Más+</a>
-        </nav>
+        <div class="heroine">
+            <nav class="nav">
+                <h2 class="logo"><span class="alidra1">Alidra</span> Eckart</h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li>
+                        <a href="socials.html">Socials</a> <!-- Se mantienen como un menú desplegable -->
+                        <ul class="dropdown">
+                            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.tiktok.com/" target="_blank">TikTok</a></li>
+                            <li><a href="https://www.threads.net/" target="_blank">Threads</a></li>
+                            <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                            <li><a href="https://www.twitch.tv" target="_blank">Twitch</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#more">More</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section class="introduction">
+        <!-- Sección de inicio -->
+        <section id="home" class="introduction">
             <h2 class="subtitle">Hola! Mi nombre es Alidra</h2>
             <p class="miTexto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis alias optio quia amet non exercitationem.</p>
         </section>
+
+        <!-- Sección de panel de texto -->
         <section class="decorated-box">
             <h3 class="panel-title">Panel de texto con estilo visual novel</h3>
             <p>Consequuntur, porro accusamus? Illo fugit repellendus labore rerum. Voluptates, adipisci excepturi.</p>
         </section>
+
+        <!-- Sección de portafolio -->
+        <section id="portafolio" class="decorated-box">
+            <h3 class="panel-title">Portafolio</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget neque ut purus facilisis feugiat.</p>
+        </section>
+
+        <!-- Sección de horario -->
+        <section id="schedule" class="decorated-box">
+            <h3 class="panel-title">Mi Horario</h3>
+            <ul>
+                <li><strong>Martes:</strong> 6 PM - 8 PM: Streaming en Twitch</li>
+                <li><strong>Jueves:</strong> 7 PM - 9 PM: Charla en Discord</li>
+                <li><strong>Sábado:</strong> 3 PM - 5 PM: Sesión de juegos</li>
+            </ul>
+            <p class="collab-link">
+                ¿Eres también un creador/streamer y quieres colaborar? <a href="link-to-collaboration-page" target="_blank">¡Haz clic aquí!</a>
+            </p>
+        </section>
+
+        <!-- Sección "More" -->
+        <section id="more" class="decorated-box">
+            <h3 class="panel-title">Más sobre mí</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, neque?</p>
+        </section>
     </main>
+
     <footer>
-        <p>© 2024 Alidra VTuber</p>
+        <p>© 2024 Alidra Eckart VTuber</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
