@@ -1,3 +1,16 @@
+//Cambiar el titulo de mi pestana
+let previousTitle = document.title
+
+window.addEventListener('blur', () => {
+    previousTitle = document.title
+    document.title = 'A donde fuiste... 👀';
+})
+
+window.addEventListener('focus', () => {
+    previousTitle = document.title;
+})
+
+
 // Esperar a que el contenido del DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', function() {
     // Crear un objeto de audio con el sonido deseado

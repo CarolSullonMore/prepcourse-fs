@@ -9,7 +9,7 @@ body.fondo {
 }
 
 /* Tipografía personalizada para los títulos */
-.title {
+#h1 {
     font-family: 'More Sugar', cursive;
     font-size: 4rem;
     text-align: center;
