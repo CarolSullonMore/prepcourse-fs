@@ -134,7 +134,7 @@ button:hover::after, .nav a:hover::after {
 }
 
 /* Tipografía personalizada para los títulos */
-#h1 {
+h1 {
     font-family: 'More Sugar', cursive;
     font-size: 2rem;
     text-align: center;
@@ -181,7 +181,7 @@ p {
 /* All the titles of my cards */
 
 .panel-title {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
@@ -194,7 +194,7 @@ p {
     color: #f0f0f0; /* Light color for contrast */
 }
 
-/* Mi Horario */
+/* Horario */
 #schedule {
     display: flex;
     position: relative;
@@ -203,15 +203,18 @@ p {
 }
 
 #schedule .schedule-text {
-    margin-left: -24px;
-    position: relative;
-    width: 100%;
+    width: 90%;
+    height: 50px;
     display: flex;
-    justify-content: end;
+    position: relative;
+    margin-left: -24px;
+    margin-right: 30px;
+    padding-left: 50px;
+    padding-top: 0;
+    justify-content: start;
     border-radius: 0 20px 20px 0;
     background-color: #7b588f;
     z-index: 1;
-    padding-right: 20px;
 }
 
 #schedule .schedule-text ::before {
@@ -225,10 +228,26 @@ p {
         z-index: -1; /* Send it behind the text */
 }
 
-#schedule .cards-schedule {
+/* Cards for days */
+
+.cards-schedule {
     display: flex;
     position: relative;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#schedule .cards-schedule .days {
+    width: 100%;
+    display: flex;
+    position: relative;    
+    flex-wrap: wrap;
+}
+
+.days {
+    display: flex;
+    position: relative;
+    flex-direction: column;
 }
 
 #schedule .cards-schedule ul li {
@@ -236,7 +255,31 @@ p {
     position: relative;
     flex-direction: row;
     list-style: none;
+    flex-direction: column;
+    border: 3px solid #ffccff;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 15px;
+    flex-basis: 48%;
 }
+
+li .daysThursday .daySaturday {
+    list-style: none;
+    display: flex;
+    
+}
+
+@media (max-width: 768px) {
+    ul.days li {
+        flex-basis: 100%; /* On small screens, each item takes full width */
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+/* Colab text */
 
 .collab-link {
     font-size: 11px;
