@@ -23,15 +23,16 @@ body.fondo {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 9%;
-    padding-right: 9%;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 /*This is for the letters 'Alidra Eckart" on my nav*/
 
 .logo {
-    font-size: 11px;
+    font-size: 0.8rem;
     font-family: 'More Sugar', cursive;
+    display: flex;
 }
 
 .alidra1 {
@@ -134,7 +135,7 @@ button:hover::after, .nav a:hover::after {
 }
 
 /* Tipografía personalizada para los títulos */
-#h1 {
+h1 {
     font-family: 'More Sugar', cursive;
     font-size: 2rem;
     text-align: center;
@@ -160,7 +161,7 @@ button:hover::after, .nav a:hover::after {
 }
 
 p {
-    font-size: 12px;
+    font-size: 0.8rem;
 }
 
 /* Estilo para el panel de texto al estilo visual novel */
@@ -168,6 +169,9 @@ p {
     margin: 50px auto;
     padding: 20px;
     width: 80%;
+    background: linear-gradient(rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.1);
     border: 4px solid #ffccf9;
     border-radius: 20px;
