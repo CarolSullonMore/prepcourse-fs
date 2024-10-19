@@ -10,7 +10,6 @@ window.addEventListener('focus', () => {
     previousTitle = document.title;
 })
 
-
 // Esperar a que el contenido del DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', function() {
     // Crear un objeto de audio con el sonido deseado
@@ -41,5 +40,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 playSound(); // Reproducir sonido
             }
         });
+    });
+});
+
+const btn = document.querySelector(".scrollUpButton");
+
+btn.addEventListener("click", () => {
+    document.documentElement.scrollTo({
+        top: 0,
+        behavior: "smooth",
     });
 });
