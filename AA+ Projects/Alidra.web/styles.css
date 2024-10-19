@@ -134,7 +134,7 @@ button:hover::after, .nav a:hover::after {
 }
 
 /* Tipografía personalizada para los títulos */
-h1 {
+#h1 {
     font-family: 'More Sugar', cursive;
     font-size: 2rem;
     text-align: center;
@@ -211,6 +211,7 @@ p {
     margin-right: 30px;
     padding-left: 50px;
     padding-top: 0;
+
     justify-content: start;
     border-radius: 0 20px 20px 0;
     background-color: #7b588f;
@@ -234,20 +235,17 @@ p {
     display: flex;
     position: relative;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 #schedule .cards-schedule .days {
     width: 100%;
     display: flex;
     position: relative;    
-    flex-wrap: wrap;
 }
 
 .days {
     display: flex;
-    position: relative;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 #schedule .cards-schedule ul li {
@@ -261,23 +259,14 @@ p {
     padding: 15px;
     margin: 15px;
     flex-basis: 48%;
+    flex-wrap: wrap;
 }
 
-li .daysThursday .daySaturday {
+il li .dayThursday .daySaturday {
     list-style: none;
     display: flex;
-    
+
 }
-
-@media (max-width: 768px) {
-    ul.days li {
-        flex-basis: 100%; /* On small screens, each item takes full width */
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-
 
 /* Colab text */
 
