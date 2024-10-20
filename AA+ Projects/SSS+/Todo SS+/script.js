@@ -1,3 +1,4 @@
+// task es una variable vacia porque nosotros le vamos a dar un valor en input.
 let tasks = [];
 
 // Función para agregar una nueva tarea
@@ -6,10 +7,11 @@ const addTask = () => {
     const text = taskInput.value.trim(); // Captura el valor del input
 
     if (text) {
-        tasks.push({ text: text, completed: false }); // Agrega la tarea al array de tareas
+        tasks.unshift({ text: text, completed: false }); // Agrega la tarea al array de tareas
         taskInput.value = ''; // Limpiar el input después de agregar la tarea
         updateTasksList();
     }
+    console.log(tasks);
 };
 
 const toggleTastComplete = (index) => {
@@ -17,8 +19,8 @@ const toggleTastComplete = (index) => {
 }
 
 const updateTasksList = () => {
-    const taskList = document.getElementById('task-list')
-    taskList.innerHTML = ''
+    const taskList = document.getElementById('task-list');
+    taskList.innerHTML = '';
 
 /* Esto es para mi lista de Tasks  */
 
@@ -37,8 +39,11 @@ const updateTasksList = () => {
             </div>
         </div>
         `;
-        listItem.addEventListener("change", () => toggleTastComplete(index));
-        taskList.append(listItem);
+        listItem.querySelector('.checkbox').addEventListener("change", () => { toggleTastComplete(index);
+        updateTasksList();
+    });
+
+    taskList.append(listItem);
     });
 };
 
@@ -46,6 +51,11 @@ const updateTasksList = () => {
 
 document.getElementById('newTask').addEventListener('click', function(e){
     e.preventDefault();
+document.getElementById('taskInput').addEventListener('kewypress', function(e){
+    if (e.key === 'Enter') {
+        addTask();
+    }
+})
 
     addTask();
 });
