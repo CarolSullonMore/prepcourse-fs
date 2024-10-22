@@ -180,7 +180,15 @@ p {
     color: #f9f9f9;
     text-align: center;
     font-size: 12px;
+    transition: transform 0.4s ease;
 }
+
+.decorated-box:hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+
 
 /* All the titles of my cards */
 
@@ -199,30 +207,27 @@ p {
 }
 
 /* Horario */
-#schedule {
+.schedule {
     display: flex;
     position: relative;
     flex-direction: column;
+    flex-wrap: wrap;
     z-index: 3;
 }
 
-#schedule .schedule-text {
+.schedule .schedule-text {
     width: 90%;
     height: 50px;
     display: flex;
     position: relative;
-    margin-left: -24px;
-    margin-right: 30px;
-    padding-left: 50px;
     padding-top: 0;
-
-    justify-content: start;
+    justify-content: center;
     border-radius: 0 20px 20px 0;
     background-color: #7b588f;
     z-index: 1;
 }
 
-#schedule .schedule-text ::before {
+.schedule .schedule-text ::before {
         content: ''; /* Necessary for the pseudo-element */
         position: absolute; /* Position it absolutely */
         left: 0px; /* Adjust this value to move the background further left */
@@ -236,20 +241,14 @@ p {
 /* Cards for days */
 
 .cards-schedule {
-    display: flex;
+    display: inline-flex;
     position: relative;
-    flex-wrap: wrap;
 }
 
 #schedule .cards-schedule .days {
     width: 100%;
     display: flex;
-    position: relative;    
-}
-
-.days {
-    display: flex;
-    flex-direction: row;
+    position: relative; 
 }
 
 #schedule .cards-schedule ul li {
@@ -273,7 +272,6 @@ il li .dayThursday .daySaturday {
 }
 
 /* Colab text */
-
 .collab-link {
     font-size: 11px;
     margin: 10px 0;
@@ -318,7 +316,6 @@ il li .dayThursday .daySaturday {
 }
 
 /* images */
-
 .aboutImgs .imgAlidra {
     position: relative;
     width: 140px;
@@ -326,7 +323,6 @@ il li .dayThursday .daySaturday {
     border: 3px solid #f5c6ff;
     border-radius: 99%;
 }
-
 
 .aboutImgs .sun .moon .asc {
     position: relative;
@@ -350,7 +346,6 @@ il li .dayThursday .daySaturday {
     border: 3px solid #f5c6ff;
     border-radius: 99%;
     transform: translate(-75px, 10px) rotate(0deg);
-
 }
 
 .aboutImgs .asc {

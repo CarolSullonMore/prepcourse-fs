@@ -10,12 +10,13 @@ window.addEventListener('focus', () => {
     previousTitle = document.title;
 })
 
+
 // Esperar a que el contenido del DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', function() {
     // Crear un objeto de audio con el sonido deseado
     const sound = new Audio('path/to/your/sound.mp3'); // Asegúrate de que el archivo de sonido esté en la ruta correcta
 
-    // Función para reproducir sonido
+    // Función para reproducir sonido (por ajora np funciona hehe)
     function playSound() {
         sound.currentTime = 0; // Reiniciar el sonido
         sound.play(); // Reproducir el sonido
