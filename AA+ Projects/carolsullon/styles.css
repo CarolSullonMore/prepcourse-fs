@@ -11,6 +11,8 @@
     --dark-magenta: #e21b5a;
     --light-green: #61e2c2;
     --light-purple: #d9abff;
+    --dark-red: #351c24;
+    --light-red: #ffa0bb;
 }
 
 *{
@@ -22,7 +24,7 @@
 }
 
 body {
-    background: linear-gradient(45deg, var(--purple), var(--light-purple));
+    background: linear-gradient(45deg, var(--dark-red), var(--light-red));
 }
 
 .container {
@@ -169,7 +171,7 @@ body {
 /*about section*/
 .about {
     background-color: #111;
-    max-width: 800px;
+    max-width: 850px;
     margin-top: 3rem;
     margin-bottom: 3rem;
     padding: 2rem 3rem;

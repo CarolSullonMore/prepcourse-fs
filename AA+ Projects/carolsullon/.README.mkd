@@ -1,0 +1,9 @@
+# Portfolio Cards Layout
+
+2 idiomas espanol e ingles
+Agregar iconos
+Subir la pagina
+cambiar el icono de la tab
+agregar link para descargar mi cv
+
+[https://wa.me/+51919741845](Link de WhatsApp)
