@@ -29,7 +29,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
     flex-wrap: wrap;
     position: relative;
@@ -163,14 +163,17 @@ body {
     border-radius: 30px;
     margin-top: 1.5rem;
     border: none;
+    cursor: pointer;
 }
 
 /*about section*/
 .about {
     background-color: #111;
-    max-width: 600px;
+    max-width: 800px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     padding: 2rem 3rem;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .about h1 {
@@ -178,13 +181,14 @@ body {
     margin-bottom: 1.1rem;
     position: relative;
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 3.5rem;
 }
 
 .about h1::after{
     position: absolute;
     content: "";
     top: 50%;
+    right: -50%;
     width: 45%;
     height: 3px;
     background: linear-gradient(45deg, #e21b5a, #f64c57);
@@ -227,16 +231,17 @@ body {
 }
 
 .work .workbox .desc p {
-    margin: 0;
+    margin: 0px;
 }
 
+/*Responsive Desing*/
 @media(max-width: 768px)
 {
     .about{
         width: 100%;
         max-width: 400px;
-        padding: 1rem;
-        margin: 1rem;
+        padding: 3rem;
+        margin: 2rem;
     }
     .about h1 {
         font-size: 2.2rem;
