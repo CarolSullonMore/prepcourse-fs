@@ -96,6 +96,7 @@ button {
     font-size: 30px;
     font-weight: bold;
     outline: none;
+    cursor: pointer;
 }
 
 #task-list {

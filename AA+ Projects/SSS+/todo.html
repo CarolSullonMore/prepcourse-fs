@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do List</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="todo.css">
     <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="shortcut icon" href="images/checklist_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg">
 </head>
 <body>
     <div class="container">
@@ -23,12 +24,14 @@
     
         <form action="">
             <input type="text" id="taskInput" placeholder="Write your tasks">
-            <button id ="newTask"  type="submit">+</button>
+            <button id ="newTask" type="submit">+</button>
         </form>
 
-        <ul id="task-list"></ul>
+        <ul id="task-list">
+            <img src="images/edit_32dp_E8EAED_FILL0_wght400_GRAD0_opsz40.svg">
+        </ul>
     </div>
-    <script src="script.js"></script>
+    <script src="todoApp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 </body>
 </html>

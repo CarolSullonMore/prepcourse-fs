@@ -27,4 +27,3 @@ function closeAllSubMenus(){
         ul.previousElementSibling.classList.remove('remove')
     });
 };
-
