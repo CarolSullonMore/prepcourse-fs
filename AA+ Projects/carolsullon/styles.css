@@ -168,6 +168,11 @@ body {
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+    color: var(--white)
+}
+
 /*about section*/
 .about {
     background-color: #111;
